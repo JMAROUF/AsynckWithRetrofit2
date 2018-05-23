@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jamal.tpasynckandretrofit.Login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/containerLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="100dp"
+            android:gravity="center">
+        <TextView
+            android:id="@+id/loginTextV"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:text="Login"/>
+        <EditText
+            android:gravity="center_horizontal"
+            android:id="@+id/loginEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginTextV"
+            android:hint="login"/>
+
+        <TextView
+            android:id="@+id/passwordTextV"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/loginEdit"
+            android:text="Password"/>
+        <EditText
+            android:gravity="center_horizontal"
+            android:id="@+id/passwordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordTextV"
+            android:hint="login"/>
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="send"/>
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="100dp"/>
+
+    </RelativeLayout>
+</ScrollView>
